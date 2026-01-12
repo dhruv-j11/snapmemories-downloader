@@ -1,8 +1,8 @@
-# 📸 Snapchat Memory Downloader
+# Snapchat Memory Downloader
 
-A beautiful, professional desktop application that helps you recover and organize your Snapchat Memories by converting Snapchat's JSON data export into a permanent, organized local media library.
+Created this desktop application that helps you recover and organize snapcht memories by converting Snapchat's JSON data export into a permanent, organized local media library. Needed to save my full storage of memories and got the idea from Gira chawda on tiktok so shoutout to her!
 
-## 🎯 What Does This Do?
+## What Does This Do?
 
 Snapchat provides users with their data as a JSON file containing metadata and temporary signed URLs. This application:
 
@@ -17,19 +17,7 @@ Your data belongs to you — this app makes it permanent and accessible.
 
 ---
 
-## ✨ Key Features
-
-- 🖥️ **Modern GUI** — Beautiful dark-themed interface with neon yellow accents and smooth animations
-- 📁 **Automatic Organization** — Files automatically organized into year-based folders
-- 🔄 **Reliable Downloads** — Automatic retry mechanism for failed downloads
-- 📊 **Progress Tracking** — Real-time progress bar with download status
-- 📝 **Detailed Reports** — CSV report showing which files downloaded successfully
-- 🎨 **Sleek Design** — Professional UI with toast notifications and completion dialogs
-- 🔒 **Error Handling** — Handles expiring links, partial downloads, and network issues gracefully
-
----
-
-## 🛠️ Requirements
+## Requirements
 
 - **Python 3.7+** (Python 3.13 recommended)
 - **macOS, Windows, or Linux**
@@ -42,53 +30,8 @@ Your data belongs to you — this app makes it permanent and accessible.
 
 ---
 
-## 📦 Installation
 
-### Quick Setup (Recommended)
-
-1. **Clone or download** this repository:
-   ```bash
-   cd snapchat_downloader
-   ```
-
-2. **Run the setup script**:
-   ```bash
-   chmod +x setup.sh
-   ./setup.sh
-   ```
-
-   This will:
-   - Create a Python virtual environment
-   - Install all required dependencies
-   - Prepare the application for use
-
-### Manual Setup
-
-If you prefer to set up manually:
-
-1. **Create a virtual environment**:
-   ```bash
-   python3 -m venv venv
-   ```
-
-2. **Activate the virtual environment**:
-   - **macOS/Linux**:
-     ```bash
-     source venv/bin/activate
-     ```
-   - **Windows**:
-     ```bash
-     venv\Scripts\activate
-     ```
-
-3. **Install dependencies**:
-   ```bash
-   pip install -r requirements.txt
-   ```
-
----
-
-## 🚀 Usage
+## Usage
 
 ### Getting Your Snapchat Data
 
@@ -142,25 +85,6 @@ output_folder/
 
 ---
 
-## 📁 Project Structure
-
-```
-snapchat_downloader/
-├── app.py              # Main GUI application (PyQt6)
-├── controller.py       # Orchestrates the download process
-├── snapchat_parser.py  # Parses Snapchat JSON export
-├── downloader.py       # Handles file downloads with retries
-├── file_manager.py     # Organizes files and manages paths
-├── report.py           # Generates CSV reports
-├── requirements.txt    # Python dependencies
-├── setup.sh            # Setup script for quick installation
-└── README.md           # This file
-```
-
-Each module has a single, clear responsibility — following professional software design principles.
-
----
-
 ## 🔧 How It Works
 
 The application follows a clean pipeline:
@@ -177,7 +101,7 @@ Snapchat JSON → Parser → Job Builder → Downloader → Validator → File O
 
 ---
 
-## 💡 Technical Highlights
+## Technical Highlights
 
 - **Modular Architecture** — Clean separation of concerns
 - **Error Resilience** — Handles expiring links, network failures, and corrupted files
@@ -187,7 +111,7 @@ Snapchat JSON → Parser → Job Builder → Downloader → Validator → File O
 
 ---
 
-## 📝 Notes
+## Notes
 
 - **Download Speed**: Download speed depends on your internet connection and Snapchat's servers
 - **File Names**: Files are named using their original timestamp (YYYY-MM-DD_HH-MM-SS format)
@@ -196,27 +120,7 @@ Snapchat JSON → Parser → Job Builder → Downloader → Validator → File O
 
 ---
 
-## 🎨 Customization
-
-### Changing the Font
-
-Edit `APP_FONT_FAMILY` in `app.py` (line 21):
-```python
-APP_FONT_FAMILY = "Helvetica Neue"  # Change to your preferred font
-```
-
-### Changing Colors
-
-Edit the color constants in `app.py` (lines 12-17):
-```python
-NEON_YELLOW = "#ffd9fc"  # Accent color
-DARK_BG = "#1a1a1a"      # Background color
-# ... etc
-```
-
----
-
-## 🐛 Troubleshooting
+## Troubleshooting
 
 **Application won't start?**
 - Ensure you've activated the virtual environment
@@ -231,19 +135,5 @@ DARK_BG = "#1a1a1a"      # Background color
 - Make sure all dependencies are installed: `pip install -r requirements.txt`
 - Verify you're using the correct Python version (3.7+)
 
----
-
-## 📄 License
-
-This project is provided as-is for personal use.
-
----
-
-## 🙏 Acknowledgments
-
-Built to help users take ownership of their personal data and preserve their digital memories.
-
----
 
 **Enjoy preserving your Snapchat memories! 📸✨**
-
